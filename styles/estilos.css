@@ -1,0 +1,116 @@
+a[href="https://google.com"]
+{
+  color: red;
+}
+
+a[href="https://facebook.com"]
+{
+  color: yellow;
+}
+
+input[disabled] {
+  background: #cdcdcd;
+}
+
+a:hover {
+  background: blue;
+  color: white;
+  padding: 10px;
+}
+
+
+a:active {
+  background: red;
+}
+
+a:visited {
+  background: blueviolet;
+  color: blueviolet;
+}
+
+/* li:first-child {
+    background: red;
+}
+li:last-child {
+    background: blue;
+} */
+
+/* li:nth-child(2) {
+    background: green;
+}
+li:nth-child(3) {
+    background: black;
+} */
+
+li:nth-child(even) {
+  background: yellow;
+}
+
+li:nth-child(odd) {
+  background: red;
+}
+
+li:nth-child(1) {
+  background: indianred;
+}
+
+li:last-child {
+  background-color: blue;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+}
+
+p::first-line {
+  background: red;
+}
+
+p::before {
+  content: '"';
+  font-size: 32px;
+}
+
+::selection{
+    color: blue;
+    background: pink;
+}
+p::first-letter {
+  font-size: 42px;
+}
+
+p::after {
+  content: '"';
+  font-size: 32px;
+}
+
+p.destacado::first-letter{
+    font-size: 42px;
+
+}p.destacado::after{
+    content: 42px;
+    font-size: 32px;
+}
+
+::selection{
+    color: blue;
+    background: pink;
+}
+p{
+    line-height: 1.6;
+
+}
+.parrafo{
+    font-size: 16px;
+    text-align: center;
+    background: #cdcdcd;
+    padding: 10px;
+}
+.parrafo::first-letter{
+    font-size: 42px;
+    color: blue;
+    line-height: 1;
+}
