@@ -88,7 +88,7 @@ h3{
     padding-right: 12px;
 }
 
-.my-skills .item:nth-child(event){
+.my-skills .item:nth-child(even){
 padding-left: 12px;
 }
 
@@ -113,7 +113,26 @@ padding-left: 12px;
 */
 .services{
     background-color:#FB7171;
+    padding: 30px 250px 80px ;
 }
+
+.services h2{
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+
+
+
+.services .item2{
+    display: inline-block;
+    width: 33%;     /*espaciado horizontal items,las dos horizontales */
+                   /*espaciado horizontal de las barras ,las dos horizontales */
+    margin-bottom: 10px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+   
+}
+
+
 
 
 /*portfolio
@@ -123,12 +142,50 @@ padding-left: 12px;
     background-color:#FFD233;
 }
 
+.portfolio{
+   
+    padding: 40px 450px 90px;
+}
+.portfolio h2{
+    text-align: center;
+    margin-bottom: 26px;
+}
+.portfolio .item3{
+    display: inline-block;
+    width: 80%;     /*espaciado horizontal de las barras ,las dos horizontales */
+                        /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
+    margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+}
+
+
 /*clientes
 
 */
 .clients{
     background-color: #3F4E62;
 }
+
+.clients{
+   
+    padding: 40px 70px 100px;
+}
+.clients h2{
+    text-align: center;
+    margin-bottom: 26px;
+}
+.portfolio .item4{
+    display: inline-block;
+    width: 150%;     /*espaciado horizontal de las barras ,las dos horizontales */
+                        /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
+    margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+ 
+}
+
+.portfolio .item4 div{
+
+margin-right: 40%;
+
+    }
 
 /*contacto
 
