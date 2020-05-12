@@ -154,7 +154,7 @@ padding-left: 12px;
     display: inline-block;
     width: 80%;     /*espaciado horizontal de las barras ,las dos horizontales */
                         /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
-    margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+    margin-bottom: 40px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
 }
 
 
@@ -167,23 +167,24 @@ padding-left: 12px;
 
 .clients{
    
-    padding: 40px 70px 100px;
+    padding: 40px 390px 100px;
 }
 .clients h2{
     text-align: center;
     margin-bottom: 26px;
 }
-.portfolio .item4{
+
+.clients .item4{
     display: inline-block;
-    width: 150%;     /*espaciado horizontal de las barras ,las dos horizontales */
+    width: 100%;     /*espaciado horizontal de las barras ,las dos horizontales */
                         /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
     margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
- 
+    margin-left: 10px;
 }
 
-.portfolio .item4 div{
+.clients .item4 div{
 
-margin-right: 40%;
+margin-right: 100%;
 
     }
 
@@ -192,6 +193,22 @@ margin-right: 40%;
 */
 .contact{
     background-color: #16A085;
+}
+.contact{
+   
+    padding: 40px 390px 100px;
+}
+.contact h2{
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.contact .item5{
+    display: inline-block;
+    width: 100%;     /*espaciado horizontal de las barras ,las dos horizontales */
+                        /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
+    margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+    margin-left: 10px;
 }
 
 
