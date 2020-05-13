@@ -190,10 +190,8 @@ margin-top: 20px;
     width: 25%;     /*espaciado horizontal de las barras ,las dos horizontales */
     /*margin-right: 100%;    /*espaciado horizontal de las barras ,las dos horizontales */
     margin-bottom: 14px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
-   
+
 }
-
-
 
 
 /*clientes
@@ -201,30 +199,26 @@ margin-top: 20px;
 */
 .clients{
     background-color: #3F4E62;
-}
-
-.clients{
-   
     padding: 40px 390px 100px;
 }
+
 .clients h2{
     text-align: center;
     margin-bottom: 26px;
 }
 
-.clients .item4{
+.clients .items{
+
+    display: inline-flex;
+    
+}
+.clients .item {
     display: inline-block;
     width: 100%;     /*espaciado horizontal de las barras ,las dos horizontales */
-                        /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
-    margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
-    margin-left: 10px;
+    /*margin-right: 100%;    /*espaciado horizontal de las barras ,las dos horizontales */
+    margin-bottom: 90px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+    margin-right: 25px;
 }
-
-.clients .item4 div{
-
-margin-right: 100%;
-
-    }
 
 /*contacto
 
