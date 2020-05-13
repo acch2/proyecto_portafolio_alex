@@ -171,22 +171,29 @@ margin-top: 20px;
 */
 .portfolio{
     background-color:#FFD233;
-}
-
-.portfolio{
-   
     padding: 40px 450px 90px;
 }
+
+
 .portfolio h2{
     text-align: center;
-    margin-bottom: 26px;
+    margin-bottom: 46px;
 }
-.portfolio .item3{
+
+.portfolio .items{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio .item {
     display: inline-block;
-    width: 80%;     /*espaciado horizontal de las barras ,las dos horizontales */
-                        /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
-    margin-bottom: 40px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+    width: 25%;     /*espaciado horizontal de las barras ,las dos horizontales */
+    /*margin-right: 100%;    /*espaciado horizontal de las barras ,las dos horizontales */
+    margin-bottom: 14px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+   
 }
+
+
 
 
 /*clientes
