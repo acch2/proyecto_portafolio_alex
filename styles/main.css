@@ -235,13 +235,18 @@ margin-top: 20px;
     margin-bottom: 26px;
 }
 
-.contact .item5{
-    display: inline-block;
+.contact .items{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.contact .item{
+    display: flex;
     width: 50%;     /*espaciado horizontal de las barras ,las dos horizontales */
                         /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
     margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
-    margin-left: 520px;
-    text-align: center;
+   
 }
 .contact input{
     height: 59px;
@@ -257,6 +262,7 @@ margin-top: 20px;
     width: 167px;
     background-color: #233451;
     color:white;
+    align-content: center;
 }
 
 /*para cambiar de color las etiquetas de nombre y apellido
