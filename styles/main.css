@@ -248,6 +248,8 @@ margin-top: 20px;
     margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
    
 }
+
+
 .contact input{
     height: 59px;
     width: 353px;
@@ -262,6 +264,8 @@ margin-top: 20px;
     width: 167px;
     background-color: #233451;
     color:white;
+    margin-left: 200px;
+    margin-top: 45px;
     
 }
 
