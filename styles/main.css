@@ -78,7 +78,7 @@ h3{
 }
 .my-skills .item{
     display: inline-block;
-    width: 50%;     /*espaciado horizontal de las barras ,las dos horizontales */
+    width: 49%;     /*espaciado horizontal de las barras ,las dos horizontales */
                         /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
     margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
 }
@@ -212,13 +212,27 @@ margin-right: 100%;
 
 .contact .item5{
     display: inline-block;
-    width: 25%;     /*espaciado horizontal de las barras ,las dos horizontales */
+    width: 50%;     /*espaciado horizontal de las barras ,las dos horizontales */
                         /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
     margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
     margin-left: 520px;
     text-align: center;
 }
+.contact input{
+    height: 59px;
+    width: 353px;
+}
+.contact  textarea{
+    height:112px ;
+    width: 759px;
 
+}
+.contact  button{
+    height:56px ;
+    width: 167px;
+    background-color: #233451;
+    color:white;
+}
 
 /*para cambiar de color las etiquetas de nombre y apellido
 input[type="text"]{
