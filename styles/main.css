@@ -266,8 +266,83 @@ margin-top: 20px;
     color:white;
     margin-left: 200px;
     margin-top: 45px;
+    border: 1px solid #233451;
+    cursor: pointer;
     
 }
+
+/*             TABLET*/
+
+@media(max-width:860px){
+    h2{
+        font-size: 2.8rem;
+    }
+    .my-skills,
+    .services,
+    .portfolio,
+    .contact,
+    .clients{
+        padding: 40px;
+    }
+
+    .banner h2{
+        right: 52px;
+        bottom: 40px;
+        text-align: center;
+
+    }
+
+
+}
+
+
+/* TABLET SMALL // CELLPHONES  LARGE*/
+@media(max-width:780px){
+    h1{
+        color: red;
+        font-size: 4.4rem;
+
+    }
+}
+
+/* CELLPHONES MEDIUM*/
+@media(max-width:620px){
+    .my-skills,
+    .services,
+    .portfolio,
+    .contact,
+    .clients{
+        padding: 20px;
+    }
+    /*banner*/
+    .banner h2{
+        font-size: 2rem;
+        padding: 10px;
+        right: inherit;
+    }
+    
+    /*my-skills*/
+    .my-skills h2{
+        margin-bottom: 10px;
+    }
+
+    .my-skills .item{
+        width: 100%;
+    }
+
+    .my-skills.item:nth-child(odd),
+    .my-skills.item:nth-child(even){
+        padding: 0;
+    }
+}
+
+/*  CELLPHONES  SMALL*/
+@media(max-width:480px){
+
+}
+
+
+
 
 /*para cambiar de color las etiquetas de nombre y apellido
 input[type="text"]{
