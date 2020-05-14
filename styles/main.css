@@ -171,25 +171,32 @@ margin-top: 20px;
 */
 .portfolio{
     background-color:#FFD233;
-    padding: 40px 450px 90px;
+    padding: 40px 180px 90px;
 }
 
 
 .portfolio h2{
     text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 56px;
 }
 
 .portfolio .items{
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-.portfolio .item {
-    display: inline-block;
-    width: 25%;     /*espaciado horizontal de las barras ,las dos horizontales */
-    /*margin-right: 100%;    /*espaciado horizontal de las barras ,las dos horizontales */
-    margin-bottom: 14px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
+
+.portfolio .items div{
+    width: 25%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+
+.portfolio img{
+width: 100%;
+display: block;
 
 }
 
@@ -199,17 +206,20 @@ margin-top: 20px;
 */
 .clients{
     background-color: #3F4E62;
-    padding: 40px 390px 100px;
+    text-align: center;
+    padding: 36px 68px 76px ;
 }
 
 .clients h2{
-    text-align: center;
-    margin-bottom: 26px;
+    
+    margin-bottom: 20px;
 }
 
 .clients .items{
-
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
     
 }
 .clients .item {
@@ -225,52 +235,51 @@ margin-top: 20px;
 */
 .contact{
     background-color: #16A085;
+    padding: 36px 100px 66px;
 }
-.contact{
-   
-    padding: 40px 390px 100px;
-}
+
 .contact h2{
     text-align: center;
-    margin-bottom: 26px;
-}
-
-.contact .items{
-
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 30px;
     
 }
-.contact .item{
+
+.contact form{
     display: flex;
-    width: 50%;     /*espaciado horizontal de las barras ,las dos horizontales */
-                        /*margin-right: 2%;    /*espaciado horizontal de las barras ,las dos horizontales */
-    margin-bottom: 20px;/*espacio entre la base de la barrita y la parte superior d ela palabra del item*/
-   
+    flex-wrap:wrap;
+    justify-content: space-between;
+       
 }
 
 
 .contact input{
-    height: 59px;
-    width: 353px;
+    width: 49%;
+    margin-bottom: 18px;
+    padding: 20px 10px;
+
 }
 .contact  textarea{
-    height:112px ;
-    width: 759px;
+        width: 100%;
+        margin-bottom: 14px;
+        padding: 140px;
 
 }
-.contact  button{
-    height:56px ;
-    width: 167px;
-    background-color: #233451;
-    color:white;
-    margin-left: 200px;
-    margin-top: 45px;
-    border: 1px solid #233451;
-    cursor: pointer;
+.contact  div{
+    text-align: center;
+    width: 100%;
+       
+    
     
 }
+.contact button{
 
+    height:56px ;
+    width: 167px;
+    color:white;
+    background-color: #233451;
+    border: 1px solid #233451;
+    cursor: pointer;
+}
 /*             TABLET*/
 
 @media(max-width:860px){
