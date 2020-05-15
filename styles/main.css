@@ -293,6 +293,9 @@ display: block;
     .clients{
         padding: 40px;
     }
+    .my-skills{
+        background-color:red;
+    }
 
     .banner h2{
         right: 52px;
@@ -306,12 +309,28 @@ display: block;
 
 
 /* TABLET SMALL // CELLPHONES  LARGE*/
-@media(max-width:780px){
+@media(max-width:720px){
     h1{
         color: red;
         font-size: 4.4rem;
 
     }
+    .my-skills{
+        background-color: green;
+        padding: 20px;
+    }
+    .my-skills h2{
+        margin-bottom: 10px;
+    }
+     .my-skills .item{
+         width: 100%;
+     }
+     .my-skills.item:nth-child(odd),
+     .my-skills.item:nth-child(even){
+         padding: 0;
+
+     }
+
 }
 
 /* CELLPHONES MEDIUM*/
@@ -329,8 +348,11 @@ display: block;
         padding: 10px;
         right: inherit;
     }
+    /*my-skill*/
+    .my-skills{
+        background-color: yellow;
+    }
     
-    /*my-skills*/
     .my-skills h2{
         margin-bottom: 10px;
     }
@@ -345,8 +367,11 @@ display: block;
     }
 }
 
-/*  CELLPHONES  SMALL*/
+    /* ----- CELLPHONES  SMALL-------*/
 @media(max-width:480px){
+    .my-skills{
+        background-color: blue;
+    }
 
 }
 
