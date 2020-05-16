@@ -372,41 +372,64 @@ display: block;
     /* ----- CELLPHONES  SMALL-------*/
 @media(max-width:420px){
 
-    h1{
-        color: rgba(153, 24, 125, 0.322);
-        font-size: 2.4rem;
-
-    }
-
     h2{
-        font-size: 0.2rem;
-        color: black;
+        font-size: 2.4rem;
     }
 
-    .my-skills,
-    .services,
-    .portfolio,
-    .contact,
-    .clients{
-        padding: 10px;
+    h3{
+        font-size: 1.4rem;
+        
     }
-    .my-skills{
-        background-color: blue;
+    .banner h1{
+        left:10px;
+        top: 10px;
+        width: auto;
+        font-size: 1.8rem;
+        color:coral
+    }
+  
+
+    .banner h2{
+        font-size: 1.8rem;
+        right:52px;
+        bottom: 20px;
+
     }
 
-    .services .item2{
-        width: 50%;
+    .services h2{
+        margin-bottom: 30px;
     }
-    .portfolio .items{
-        width: 50%;
-    }
-    .clients .items {
-        width: 50%;
-    }
-     .contact form{
-        width: 10%;
 
-     }
+    .services .items div{
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .portfolio h2{
+        margin-bottom: ;
+    }
+    .portfolio .items div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*clientes*/
+    .clients h2{
+        margin-bottom:20px ;
+    }
+    
+    .clients .items div{
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+    /* contact */
+    .contact h2{
+        margin-bottom: 20px;
+    }
+    .contact input{
+        width: 100%;
+    }
 
 }
 
