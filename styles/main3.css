@@ -5,6 +5,12 @@
   html{
     font-size: 120.5%;
     }
+
+    h4{
+        color: #5500C1;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
     /*definiendo la cabecera principal que va contener*/
   .cabecera{
     background-color:#5500C1;
@@ -57,17 +63,17 @@
 .cuerpo{
   background-color:white;
   width: 1440px;
-  height:849px ;
+  height:1210px ;
   border-radius: 1px 1px;    
-  margin-top:78px ;
-  margin-left:294px ;
-  border: 1px;
+   border: 1px;
 
 }
 
 .cuerpo  h2{
   color: #009B9B;
   font-size: 32px;
+  margin-left: 265px;
+  margin-top: 50px;
 }
 
 
@@ -75,44 +81,36 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  grid-gap: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  margin:0px 294px;
+ 
 }
 
-.cuerpo div {
-  width: 59%;
+.cuerpo .grid div {
+  width: 33.3%;
   margin-bottom: 18px;
   text-align: center;
-    
+  border-style: ridge;
+  margin:25px -35px;
+      
+}
+.cuerpo .grid img{
+  margin-top:36px;
+  margin-bottom: -4px;
+
+
 }
 
-.cuerpo input{
-  
-  margin-bottom: 18px;
-  padding: 20px 10px;
 
-}
 
-.grid input{
-   height:52px ;
-   width: 416px;
-        
-}
 .grid:hover input{  
   
   box-shadow: 1px 1px red;
 }
 
-.cuerpo button{
-color: white;
-background-color: #5500C1;
-height:41px ;
-width: 226px;
-cursor:  pointer;
-
-}
 
  /*definiendo el PIE_DE_PAGINA */
  .piedepagina{
