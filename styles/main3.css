@@ -6,6 +6,15 @@
     font-size: 120.5%;
     }
 
+  .principal{
+    height: 1616px;
+    width: 1443px;
+    border-radius: 1px 1px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    }
+
     h4{
         color: #5500C1;
         font-size: 14px;
@@ -34,21 +43,23 @@
 .cabecera .contactos{
     display: flex;  
     align-items: center;  
-    padding-right:50px;
+    padding-right:20px;
 }
 .cabecera .contacto1{
   display: flex;  
-  justify-content: space-between;
-  align-items: center;  
+   align-items: center;  
  
 }
+.cabecera .contacto3{
+  margin-right: 11px;
+}
 
-
-.contactos div{
-
+.contactos .items{
   text-align: center;
   width: 50%  ;
 }
+
+
 
 .contactos button{
   height: 43px;
@@ -66,14 +77,15 @@
   height:1210px ;
   border-radius: 1px 1px;    
    border: 1px;
+   margin-top: 78px;
 
 }
 
 .cuerpo  h2{
   color: #009B9B;
   font-size: 32px;
-  margin-left: 265px;
-  margin-top: 50px;
+  margin-left: 250px;
+  margin-top: 40px;
 }
 
 
@@ -86,6 +98,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin:0px 294px;
+  margin-left: 250px;
  
 }
 
@@ -95,6 +108,7 @@
   text-align: center;
   border-style: ridge;
   margin:25px -35px;
+  
       
 }
 .cuerpo .grid img{
