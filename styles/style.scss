@@ -1,21 +1,19 @@
 
+@import "globals";
 @import "reset";
-/*
-Globals
-*/
+@import "variables";
 
-html{
-font-size: 62.5%;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    main{
+        flex-grow: 1;
+    }
+
+    header{
+        background-color: $color_primary;
+    }
 }
 
-body{
-font-family:$font-family;
-font-size:$font-size;
-}
-a{
-    text-decoration: none;
-}
-
-.wrapper{
-
-}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>arreglo de datos</title>
+    <script type="text/javascript">
+    frutas=["uva","fresa","kiwi"];
+    console.log(frutas);
+    console.log(frutas[2]);
+    frutas[1]="manzana";
+    console.log(frutas);
+    frutas.push("piña");
+    frutas.push("coco");
+    console.log(frutas);
+    console.log("cant:"+frutas.length);
+    //splice :se ubica en la posicion 1
+    //y a partir de edsa posicion elimina 3 elementos
+    frutas.splice(1,3);//eliminar elementos
+    console.log(frutas);
+    ult_pos=frutas.length-1;
+    frutas.splice(-1);//quito el ultimo elemto
+    console.log(frutas);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
