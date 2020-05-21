@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+    <title>condicionales</title>
+    <script type="text/javascript">
+    edad=17;
+    if(edad>18){
+        console-log("Es mayor de edad");
+    }else{
+        console.log("Es menor de edad");
+        
+    }
+
+    mes=5;
+    if(mes==1){
+        console.log("Enero");
+    } else if (mes==2){
+        console.log("febrero");
+    } else if (mes==3){
+        console.log("marzo");
+    } else if (mes==4){
+        console.log("abril")
+    } else if (mes==5){
+        console.log("mayo");
+    }else{
+        console.log("fuera del rango");
+    }
+    
+    dia=4;
+    switch(dia){
+
+        case 1:
+        console.log("lunes");
+        break;
+        case 2:
+        console.log("martes");
+        break;
+
+        case 3:
+        console.log("miercoles");
+        break;
+
+        case 4:
+        console.log("jueves");
+        break;
+
+        default:
+        console.log("no existe el dia");
+        break;
+
+    }
+
+    operador="r";
+    switch(operador){
+        case "m":
+        console.log("multiplicar");
+        break;
+        case "d":
+        console.log("dividir");
+        break;
+        case "r":
+        console.log("resta");
+        break
+        case "s":
+        console.log("suma");
+        break;
+        default:
+        console.log("operador invalido");
+        break;
+
+    }
+    precio=100;
+    (precio>200)?console.log("tiene descuento"):console.log("no hay descuento");
+    
+    if(precio>200){
+        monto=precio*0.9;
+    }else{
+        monto=precio*0.95;
+    }
+    console.log(monto);
+    monto2=(precio>200 && precio>100)?precio*0.9:precio*0.95;
+    console.log(monto2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
