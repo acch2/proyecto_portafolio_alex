@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Numeros</title>
+   <script type="text/javascript">
+
+    function preguntar() {
+        nombre = prompt("como te llamas");
+        saludar(nombre);
+    }
+    function saludar(nom) {
+        console.log("saludar:"+nom);
+        peli = prompt("hola" + nom + ", que pelicula veras?");
+        cant=prompt(nom+", cuantas entradas vas a comprar")
+        calcular(cant);
+    }
+    function calcular(cant){
+        console.log(typeof cant);
+        console.log("calcular:"+cant)
+        total = 15*cant;
+        val_desc=descuento(total);//obtengo el descuento
+        console.log(val_desc);
+        nuevo_total=total -val_desc;//calculo el nuevo total
+        alert("el total a pagar es S/"+nuevo_total);
+        alert("el descuento es "+val_desc);
+    }
+    function descuento(tot){
+        if(tot>50){
+            desc=tot*0.10;
+        }else{
+            desc=0;
+        }
+        return desc;
+    }
+
+    //si el total supera los 50 ,descuento del 10%
+    preguntar();
+  /* var total=prompt("ingresa el total de compra");
+   suma=parseInt(total) -5;
+   console.log(suma);*/
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script type="text/javascript">
+    auto={
+        marca:"toyota",
+        modelo:"yaris",
+        placa:"ABC345",
+        anio:2015,
+        encendido:false,
+        combustible:0,
+        accesorios:["ac","full","lunas elec"],
+        encender: function(){
+            if(this.combustible >0){           
+            this.encendido=true;
+            console.log("Auto encendido");
+          }    else  {
+                console.log("no hay suficiente combustible");
+          }  
+
+        },
+        apagar:function(){
+            this.encendido=false;
+            console.log("auto apagado");
+        }
+        
+    }
+    console.log(auto.modelo);
+    auto.placa="ABC123",
+    auto.color="Blanco",
+
+    console.log(auto.encender()),
+    console.log(auto.encendido);
+    console.log(auto.apagar());
+    console.log(auto.encendido);
+    //console.log(auto.);
+ </script>
+</head>
+<body>
+    
+</body>
+</html>
