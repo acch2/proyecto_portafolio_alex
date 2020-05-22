@@ -11,7 +11,8 @@
         combustible:0,
         accesorios:["ac","full","lunas elec"],
         encender: function(){
-            if(this.combustible >0){           
+            //combustible mayor a 0 y el auto esta apagado(this)
+            if(this.combustible >0 && !this.encendido){           
             this.encendido=true;
             console.log("Auto encendido");
           }    else  {
@@ -20,8 +21,12 @@
 
         },
         apagar:function(){
-            this.encendido=false;
+            console.log("apagar:"+this.encendido);
+            if(this.encendido){// si esto es verdadero
+                this.encendido=false;//apago el auto
             console.log("auto apagado");
+            }
+            
         }
         
     }
@@ -29,9 +34,10 @@
     auto.placa="ABC123",
     auto.color="Blanco",
 
-    console.log(auto.encender()),
-    console.log(auto.encendido);
-    console.log(auto.apagar());
+    auto.encender();
+    auto.encender();
+      console.log(auto.encendido);
+    auto.apagar();
     console.log(auto.encendido);
     //console.log(auto.);
  </script>
