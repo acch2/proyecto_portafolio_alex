@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script type="text/javascript">
+    cafetera={
+        color:"blanco",
+        precio:149.99,
+        encendido:false,
+        decirColor:function(){
+            console.log("Color:"+ this.color);
+       
+        },
+
+        decirEstado:function(){
+            if(this.encendido){
+                console.log("cafetera encendida");
+            }else{
+                console.log("cafetera apagada");
+            }
+
+        }
+
+    }
+    console.log(cafetera.precio);
+    cafetera.decirColor();
+    cafetera.decirEstado();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
