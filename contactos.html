@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Dom -lista de contactos</title>
+    <script type="text/javascript">
+    function insertar(){
+        cuerpo=document.getElementById("lista");
+        codigo="<tr>"+"<td>juan</td>"+
+                         "<td>9999989898</td>"+
+                            "</tr>";
+        cuerpo.innerHTML=codigo;
+    }
+
+    </script>
+</head>
+<body>
+    <button onclick="insertar()">guardar</button>
+    <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>telefono</th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+               
+            </tbody>
+    </table>
+    
+</body>
+</html>

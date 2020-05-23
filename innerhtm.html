@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script type="text/javascript">
+    function guardar(){
+        caja=document.getElementById("dato");
+        parrafo=document.getElementById("texto");
+        parrafo.innerHTML=caja.value;
+        
+    }
+
+    </script>
+</head>
+<body>
+<input type="text" id="dato"><br/>
+<button onclick="guardar()">insertar</button>
+<p id="texto"></p>
+    
+</body>
+</html>
