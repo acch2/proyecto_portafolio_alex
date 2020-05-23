@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <script type="text/javascript">
+    function calcular(){
+        //estoy accedieneod al elemento con id num1
+        caja=document.getElementById("num1");
+        caja2=document.getElementById("num2");
+
+        //la caji1 esta vacia o el valor no es un numero
+        if(!caja.value || isNaN(caja.value)  ){
+            alert("debes ingresar una dato en caja 1");
+        }else if(!caja2.value || isNaN(caja2.value)){
+            alert("debes ingresar una dato en caja 2");
+        
+        } else {
+            n1=parseInt(caja.value);
+            n2=parseInt(caja2.value);
+            total =n1+n2;
+            alert(total);
+        }
+        //acceder al contenido de la caja
+        alert(caja.value);
+        // mostrando la cantidad de caracteres del valor
+        console.log(caja.value.length);
+    }
+    </script>
+</head>
+<body>
+   <input type="text" id="num1"/> </br>
+   <input type="text" id="num2"/> </br>
+   <button onclick="calcular()">calcular</button>
+</body>
+</html>

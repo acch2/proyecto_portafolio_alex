@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script type="text/javascript">
+    function operar(){
+        n1=document.getElementById("num1");
+        n2=document.getElementById("num2")
+        combo=document.getElementById("ope");
+        d1=parseInt(n1.value);
+        d2=parseInt(n2.value);
+        switch(combo.value){
+            case "s":
+            total=d1+d2;
+            alert("suma"+total);
+            break;
+           
+            case "r":
+            total=d1-d2;
+            alert("la resta"+total)
+            break;
+            
+            case "m":
+            total=d1*d2;
+            alert("la multiplicacion"+total)
+            break;
+
+            case "d":
+            if(d2==0){
+                alert("no se puede dividir");
+            }else{ 
+            total=d1/d2;
+            alert("la division "+ total)
+            break;
+        }
+
+
+        }
+
+    
+   
+
+
+
+    }
+
+    </script>
+</head>
+<body>
+    <input type="number" id="num1"/>
+    <select  id="ope">
+        <option value="s"> Sumar</option>
+        <option value="r"> Restar</option>
+        <option value="d"> Dividir</option>
+        <option value="m"> Multiplicar</option>
+
+    </select>
+    <input type="number" id="num2"/>
+  <button onclick="operar()">Calcular</button>
+    
+</body>
+</html>
