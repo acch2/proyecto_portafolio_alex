@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>dom_listener2</title>
+</head>
+<body>
+    <button id="btnCalcular">Calcular</button>
+    <button id="btnQuitar">Quita Funcion</button>
+    <script type="text/javascript">
+    function saludar(){
+        alert("HOLA");
+    }
+    function quitando(){
+        console.log("Quitando el evento");
+        boton.removeEventListener("click",saludar);
+        quitar.removeEventListener("click",quitando);
+    }
+    boton=document.getElementById("btnCalcular");
+    boton.addEventListener("click",saludar);
+    quitar=document.getElementById("btnQuitar");
+    quitar.addEventListener("click",quitando)
+    
+        //quitar.onclick=function(){
+        //console.log("Quitando el evento");
+        //boton.removeEventListener("click",saludar);
+    
+
+    </script>
+    
+</body>
+</html>

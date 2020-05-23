@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nom" placeholder="Nombre"/> <br/>
+    <input type="text" id="telf" placeholder="telefono"><br/> 
+    <button id="btnGuardar">Guardar</button>
+    <script type="text/javascript">
+    boton=document.getElementById("btnGuardar");
+    nombre=document.getElementById("nom");
+     telefono=document.getElementById("telf");
+    boton.onclick= function(){
+        
+        if(nombre.value==""){
+            alert("debes ingresar un noimbre");
+            nombre.focus();
+
+        }else if(telefono.value==""){
+            alert("debes ingresar un telefono");
+        }
+    }
+    nombre.onfocus=function(){
+        console.log("estas en la caja focus");
+        this.style="background:yellow";
+    }
+    nombre.onblur=function(){
+        this.style="background:white";
+        if(this.value==""){
+            alert("la caja nombre no debe estar vacia");
+        } else if(this.value.length<3){
+            alert("ingresa unm  nombre valido");
+        }
+    }
+
+    </script>
+    
+</body>
+</html>

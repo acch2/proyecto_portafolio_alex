@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="mostrar()" id="combo">
+        <option value="0">selecionar una opcion</option>
+        <option value="1">Docente</option>
+        <option value="2">Alumno</option>
+
+    </select>
+    <div id="doc" style="display:none">Docente</div>
+    <div id="alum" style="display: none">Alumno</div>
+
+    <script type="text/javascript">
+    function mostrar(){
+        opcion=document.getElementById("combo").value;
+        docente=document.getElementById("doc");
+        alumno=document.getElementById("alum");
+        if(opcion==1){//cuandoes docente
+            docente.style="display:block"; ;//muestra el div del docente
+            alumno.style="display:none";//oculto el div del alumno
+        }else if(opcion==2){ //cuandoes alumnio
+            alumno.style="display:block"; //muestra el div del alumno
+            docente.style="display:none";  //oculto el div del docente          
+            
+            }else{
+                alert("seleccione una opcion")
+                docente.style="display:none";
+                alumno.style="display:none";
+            
+        }
+    }
+    </script>
+    
+</body>
+</html>

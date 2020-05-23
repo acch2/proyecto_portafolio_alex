@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Dom-listener</title>
+</head>
+<body>
+    <button id="btnCalcular">Calcular</button>
+    <script type="text/javascript">
+    boton= document.getElementById("btnCalcular");
+    boton.addEventListener("click",function(){
+        alert("Hiciste clic");
+    });
+    cont=0;
+    boton.addEventListener("mouseover",function(){
+        cont++;
+        console.log("el mouse esta sobre el boton:"+cont);
+   });
+   boton.addEventListener("mouseout",function(){
+       this.style="background:red;color:white";
+   });
+    </script>
+    
+</body>
+</html>
