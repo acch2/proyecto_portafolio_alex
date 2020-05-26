@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    
+    <script type="text/javascript">
+    window.onload= function(){    
+    caja1=document.getElementById("num1");
+    console.log(caja1.value);
+    caja1.addEventListener("focus",function(){
+        this.style = "background:yellow";
+    });
+    caja1.onblur = function(){
+        this.style="background:white";
+    }
+    boton=document.getElementById("btnCalcular");
+    boton.onclick=function(){
+        alert("Hola");
+    }
+
+    }
+    </script>
+</head>
+<body>
+    <input type="text" id="num1" value="890"/>
+    <button id="btnCalcular">Calcular</button>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  type="text/javascript">
+
+    function Dog(nom,raz){// clase Dog
+        this.nombre=nom;
+        this.raza=raz;
+        this.ladrar=function(){
+            return  `${this.nombre} dice wof`;
+      
+            }
+            this.obtenerRaza=function(){
+                return `${this.nombre} es un ${this.raza}`;
+            }
+    }
+
+    //instanmciando el objeto de la clase Dog
+    perro1 =new Dog("Rufo","Doberman");
+    console.log(perro1.ladrar());
+    console.log(perro1.obtenerRaza());
+    perro2= new Dog("Cloty","chihuahua");
+    console.log(perro2.ladrar());
+    console.log(perro2.obtenerRaza());
+    console.log(perro1.ladrar(),)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

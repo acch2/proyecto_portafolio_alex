@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <script  type="text/javascript">
+    function Animal(nom,raz,esp){
+        //propiedades o atributos
+        this.raza=raz;
+        this.nombre=nom;
+        this.especie=esp;
+        //metodos
+        this.comer=function(){
+            return ` el ${this.raza} ${this.nombre} come `
+        }
+        this.obtenerEspecie=function(){
+            return ` ${this.raza} es un ${this.especie}  `;
+
+        }
+        this.obtenerPatas=function(){
+            return ` Esta ${this.especie} tiene 4 patas `;
+        }
+    }
+    function Dog(nombre,raza){
+       Animal.call(this,nombre,raza,"perro");
+        this.hablar=function(){
+            return "wooff woof..."
+        }
+    }
+
+    function Cat(nombre,raza){
+        Animal.call(this,nombre,raza,"gato");
+        this.hablar=function(){
+            return "miau miau,,";
+          
+     }
+
+    }
+
+    function Chicken(nombre,raza){
+        Animal.call(this,nombre,raza,"gallo");
+        this.hablar=function(){
+            return "kikirikiii";
+            
+        }
+        this.obtenerPatas=function(){
+            return "el ave tiene dos patas";
+        }
+
+    }
+
+          Dog.prototype=new Animal();//la clase Dog hereda todad las caracteristicas dela clase Animal
+          Cat.prototype=new Animal();
+          Chicken.prototype=new Animal();
+
+          gallo=new Chicken("turuleka","ave");
+          console.log(gallo.hablar());
+          console.log(gallo.comer());
+          console.log(gallo.obtenerEspecie());
+          console.log(gallo.obtenerPatas());
+
+
+          gato=new Cat("Michi","Siames");
+          console.log(gato.hablar());
+          console.log(gato.comer());
+          console.log(gato.obtenerEspecie());
+          console.log(gato.obtenerPatas());
+
+          perro=new Dog("Rufus","doberman");
+          console.log(perro.hablar());
+          console.log(perro.comer());
+          console.log(perro.obtenerEspecie());
+          console.log(perro.obtenerPatas());
+
+          perro2= new Dog("cloti","chihuahua");
+          console.log(perro2.comer());
+          console.log(perro2.hablar());
+          console.log(perro2.obtenerPatas());
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
