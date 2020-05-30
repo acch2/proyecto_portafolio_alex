@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ejercicio7</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            num = document.getElementById("num");
+            boton = document.getElementById("btnValidar");
+            texto = document.getElementById("resp");
+            boton.onclick = function() {
+                if (num.value % 2 == 0) {
+                    texto.innerHTML = "EL NUMERO ES PAR";
+                } else {
+                    texto.innerHTML = "EL NUMERO ES INPAR";
+                }
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="num" /> <br/>
+    <button id="btnValidar">Validar</button>
+    <p id="resp"></p>
+
+</body>
+
+</html>

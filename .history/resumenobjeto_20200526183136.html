@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Persona() {
+            //atributos
+            this.nombre = "";
+            this.nacionalidad = "";
+
+            //metodos
+            this.presentar = function() {
+                return ` Hola ,soy ${this.nombre}`;
+            }
+
+        }
+
+        function Trabajador(prof, anios) {
+            this.profesion = prof;
+            this.anios_exp = anios;
+            this.saludar = function {
+                return ` Hola ,soy ${this.profesion} , y tengo ${this.anios_exp} años de experiencia`;
+            }
+        }
+
+        obj = new Trabajador("abogado", 8);
+        console.log(ob.saludar());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

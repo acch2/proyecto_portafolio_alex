@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script script type="text/javascript">
+        window.onload = function() {
+            nun = document.getElementById("num");
+            boton = document.getElementById("btnValidar");
+            texto = document.getElementById("resp");
+            boton.onclick = function() {
+                if (num.value == 0) {
+                    texto.innerHTML = "EL angulo es Nulo";
+                } else if (num.value > 0 && nun.value < 90) {
+                    texto.innerHTML = "EL angulo es Agudo";
+
+                } else if (nun.value = 90) {
+                    texto.innerHTML = "EL angulo es Recto";
+
+                } else if (num.value > 90 && nun.value < 180) {
+                    texto.innerHTML = "EL angulo es Obtuso";
+
+                } else if (nun.value == 180) {
+                    texto.innerHTML = "EL angulo es Llano";
+
+                }
+
+
+
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="num" /> <br/>
+    <button id="btnValidar">Validar</button>
+    <p id="resp"></p>
+</body>
+
+</html>

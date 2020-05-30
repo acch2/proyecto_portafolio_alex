@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reucperar datos sesssionstorage</title>
+    <script type="text/javascript">
+        function ingresar() {
+            pro = document.getElementById("profesion");
+            dni = document.getElementById("dni");
+            sessionStorage.setItem("Profesion", pro.value);
+            sessionStorage.DNI = dni.value;
+            pro.value = ""; //limpiamos la caja de profesion
+            pro.value = ""; //limpiamos la caja de DNI
+        }
+
+        function consultarProf() {
+            val_pro = sessionStorage.Profesion;
+            alert(val_pro);
+        }
+
+        function consultarDNI() {
+            val_dni = sessionStorage.getItem("DNI");
+            alert(val_dni);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+<input type="text" id="profesion" placeholder="Profesion" /><br/>
+
+<input type="text" id="dni" placeholder="DNI" /><br/>
+<button id="btnIngresar" onclick="ingresar()">Ingresar</button><br/>
+<button id="btnDNI" onclick="consultarDNI()">Consultar DNI</button><br/>
+<button id="btnProf" onclick="consultarProf()">Consultar Profesion</button>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            val_usuario = document.getElementById("usuario");
+            if (localStorage.usuario) {
+                val_usuario.value = localStorage.usuario;
+
+            }
+        }
+
+        function ingresar() {
+            localStorage.usuario = val_usuario.value;
+            localStorage.login = true;
+            location.href = "./principal.html";
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" id="usuario" placeholder="Usuario" /><br/>
+    <input type="password" id="clave" placeholder="clave" /><br/>
+    <button onclick="ingresar()">Ingresar</button>
+
+</body>
+
+</html>

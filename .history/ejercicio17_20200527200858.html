@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>17</title>
+    <script type="text/javascript">
+        pares = 0;
+        impares = 0;
+        numeros = "";
+        for (i = 1; i <= 6; i++) {
+            val_num = prompt(i + ".ingrese un numero:");
+            numeros += val_num + "<br/>"
+            num = parseInt(val_num); //convierte a entero
+            console.log(num);
+            if (nun % 2 == 0) {
+                pares++;
+            } else {
+                impares++;
+            }
+
+        }
+    </script>
+</head>
+
+
+
+
+
+<body>
+    <div id="lista"></div>
+    <script type="text/javascript">
+        texto = document.getElementById("lista");
+        texto.innerHTML = numeros;
+        document.write("Pares:" + pares);
+        document.write("<br/>");
+        document.write("impares:" + impares);
+    </script>
+
+</body>
+
+</html>

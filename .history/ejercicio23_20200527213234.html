@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ejercicio23</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            num = document.getElementById("num");
+            boton = document.getElementById("btnProcesar");
+            boton.onclick = function() {
+                if (num.value == "" || num.value <= 0) {
+                    alert("Numero invalido");
+                } else {
+                    for (i = 1; i <= 10; i++) {
+                        total = num.value * i;
+                        console.log(nun.value + "x" + i + "=" + total);
+                    }
+
+                }
+
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

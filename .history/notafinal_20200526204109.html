@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            nt = document.getElementById("n1");
+            np = document.getElementById("n2");
+            ne = document.getElementById("n3");
+            boton = document.getElementById("btnCalcular");
+            texto = document.getElementById("resp");
+            boton.onclick = function() {
+                nota = nt.value * 0.3 + np.value * 0.4 + ne.value * 0.3;
+                texto.innerHTML = "la nota final es" + nota;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="n1" placeholder="Nota Teo"> <br/>
+    <input type="number" id="n2" placeholder="Nota Prac"> <br/>
+    <input type="number" id="n3" placeholder="Nota ExF"> <br/>
+    <button id="btnCalcular">Calcular</button>
+    <p id="resp"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ejercicios</title>
+    <style type="text/css">
+        .rojo {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="number" id="n1" placeholder="cateto A"><br/>
+    <p id="error1" style="display:none">Dato invalido</p>
+    <input type="number" id="n2" placeholder="cateto b"><br/>
+    <button id="btnCalcular">calcular</button>
+    <p id="resp"></p>
+    <script type="text/javascript">
+        boton = document.getElementById("btnCalcular");
+        cat1 = document.getElementById("n1");
+        cat2 = document.getElementById("n2");
+        texto = document.getElementById("resp");
+        error1 = document.getElementById("error1");
+        boton.onclick = function() {
+            a = cat1.value;
+            b = cat2.value;
+            c = Math.sqrt(a * a + b * b);
+            console.log("hipotenusa:" + c);
+            texto.innerHTML = "HIPOTENUSA:" + c;
+
+        }
+        cat1.onblur = function() {
+            if (this.value == "0") { //cuando el dato es un cero 
+                error1.innerHTML = "No puede ingresar 0 como dato";
+                error1.style = "display.block";
+            } else if (this.value == "") { //datos invalidos
+                this.placeholder = "el dato no puede estar vacio";
+                error1.style = "display.block";
+
+            } else { // el valor de la caja esta bien todo ok
+                error1.style = "display.none";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

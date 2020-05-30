@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio17</title>
+    <script type="text/javascript">
+        pares = 0;
+        impares = 0;
+        numeros = "";
+        for (i = 1; i <= 6; i++) {
+            val_num = prompt(i + ". Ingresa un número:");
+            numeros += val_num + "<br/>";
+            num = parseInt(val_num);
+            console.log(num);
+            if (num % 2 == 0) { //Es par
+                pares++; //Incremento en 1
+            } else { //Entonces es impar
+                impares++; // Incremento en 1
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="lista"></div>
+    <script type="text/javascript">
+        texto = document.getElementById("lista");
+        texto.innerHTML = numeros;
+        document.write("Pares: " + pares);
+        document.write("<br/>");
+        document.write("Impares: " + impares);
+    </script>
+</body>
+
+</html>

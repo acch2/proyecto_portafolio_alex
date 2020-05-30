@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Ejercicios</title>
+
+</head>
+
+<body>
+    <input type="number" id="n1" placeholder="cateto A"><br/>
+    <input type="number" id="n2" placeholder="cateto b"><br/>
+    <button id="btnCalcular">calcular</button>
+    <p id="resp"></p>
+    <script type="text/javascript">
+        boton = document.getElementById("btnCalcular");
+        cat1 = document.getElementById("n1");
+        cat2 = document.getElementById("n2");
+        boton.onclick = function() {
+            a = cat1.value;
+            b = cat2.value;
+            c = Math.sqrt(a * a + b * b);
+            console.log("hipotenusa:" + c);
+
+            //raiz cuirada
+
+        }
+    </script>
+</body>
+
+</html>

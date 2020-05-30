@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Persona(nom, nac) {
+            this.nombre = nom;
+            this.nacionalidad = nac;
+
+            this.presentar = function() {
+                return ` Hola ,soy ${this.nombre}`;
+            }
+
+        }
+
+        function Trabajador(nom, nac, prof, anios) {
+            Persona.call(this, nom, nac);
+
+            this.profesion = prof;
+            this.anios_exp = anios;
+            this.saludar = function() {
+                return ` Hola ,soy ${this.profesion} , y tengo ${this.anios_exp} años de experiencia`;
+            }
+        }
+        Trabajador.prototype = new Persona();
+        obj = new Trabajador("luis", "Peruano", "abogado", 8);
+        console.log(obj.saludar());
+        console.log(obj.presentar())
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
